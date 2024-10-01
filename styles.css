@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    background-color: #f3a683;
+    height: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li{
+    float: left;
+    font-size: 1.5rem;
+    padding: 10px;
+    line-height: 2.5rem;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #303952;
+}
+
+.menu li a:hover {
+    background-color: #303952;
+    color: #f3a683;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #63cdda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+#projects {
+    height: 100vh;
+    background-color: #f5cd79;
+    overflow-y: auto;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-tile{
+    width: 40%;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-tile {
+      width: 90%;
+    }
+  }
+
+
+.project-image {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.project-link {
+    text-decoration: none;
+    text-align: center;
+    color: #303952;
+    padding-top: 10px;
+}
+
+.project-link:hover {
+    color: #596275;
+    font-weight: 700;
+}
+
+#contact {
+    background-color: #63cdda;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-links {
+    padding-top: 50px;
+}
+
+.contact-links a{
+    padding: 15px 15px;
+    color: #303952;
+    background-color: #f3a683;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.contact-links a:hover {
+    background-color: #303952;
+    color: #f3a683;
+}
